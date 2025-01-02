@@ -1,1 +1,13 @@
+TAILWIND CSS NOTES
+- Keep in mind that TailwindCSS is a mobile-first framework. This means they use MIN-WIDTH for the media breakpoints and not MAX-WIDTH. This is the opposite of familiar practices. 
+EXAMPLE: 
+<div class='w-full sm:w-1/2'></div>
 
+- In this example, the div will take up 50% width on all screens EXCLUDING small screens (less than 640px) where the div will take up 100% width. 
+
+- To use percentages in Tailwind class definitions provide w for width or h for height then use a fraction out of 12 or simplify that fraction 
+'h-3/12' || 'w-1/4'
+
+- To use rem, simply define width or height with an integer or float.
+
+- Defines margins in Tailwind using mt-x(margin-top) ml-x(margin-left) etc etc. 
