@@ -1,1 +1,14 @@
+CSS Animation:
+- Transform and Transition are used in conjunction with one another. TRANSFORM: to define the animation, i.e., move an object. TRANSITION: defined the rules of the animation i.e., time and style.
+- When defining animation and keyframes use this syntax. 
 
+.classDiv { 
+  animation: (animation-name) (animation-duration) (animation-style: like 'smooth')
+}
+
+@keyframes (animation-name){
+  DEFINES ANIMATION RULES
+    - Use From & To || Use percentages to give multiple animation points
+}
+
+- Apply animation properties such as 'animation-iteration-count', 'animation-delay', 'animation direction', etc, inside the classDiv CSS rules or wherever the animation name is defined.
