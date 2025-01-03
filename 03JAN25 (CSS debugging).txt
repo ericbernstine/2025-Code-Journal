@@ -1,0 +1,17 @@
+CSS Debugging 
+
+CSS will skip over mistakes it will not log an error message for you. However, it will highlight possible errors. Use Styleinit extension on VS code or use View -> Problems.
+
+Steps: 
+- Build mobile first if possible
+    - If errors persist on mobile, build responsive components. Meaning set elements or sections to hidden based on the current viewport
+- Break down elements to least amount of code possible. 
+- Check measurement units of child and parent elements 
+- Move items to a different spot and test behavior 
+- Download pesticide 
+- Account for browser issues (Mostly Safari // Webkit)
+    - If errors persist, try resetting the default styling
+- USE sites like Modernizer, Reset.css & Normalize.css
+- Add a red border to the element
+- Inspect pages on Firefox and click the i button for more details on styling issues
+- FOR GRID PROBLEMS, open the web app on Firefox and inspect the page, this will show you the exact gridlines
