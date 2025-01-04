@@ -1,0 +1,16 @@
+Binary Search Algo 
+
+- Binary Search, similar to a two-pointer algorithm, splits the array into two sections, normally the start and end of an array. In two-pointer that is one single value, in binary it is split into sections. Both algos are used as search algorithms. 
+	- Binary Searches ONLY work on sorted arrays. 
+
+STEPS:
+- Split array into high and low values, calculate middle value or ‘mid’ element 
+- Compare target value to mid. If target is greater than middle value. The target must be in the right half of the array. If target is less than middle value, the target is in the left half. 
+- Update the range of the array. The lowest value of the right array (higher values) becomes the new low value. High values stays the same
+	- OR. the highest value of the left array (lower values) becomes the new high 	value, and the low value stays the same. 
+- Once the range of the array is updated search again. 
+- Eventually the middle value will match the target value, or the entire array will be searched and the target value will not be found. 
+
+
+BINARY SEARCH USES O(n log n) 
+- Can definitely be faster than a liner search depending on the size of data. Use binary for bigger sets, and a linear search for smaller. 
