@@ -1,0 +1,24 @@
+Linked Lists Data Structure 
+
+- A SINGLY linked list is made up of a long change of nodes. 
+	- Think of linked lists as arrays where each element (node) stores data, AND 	a memory address (aka pointer) for the NEXT node in line. 
+- A DOUBLY linked list is the same but each node stores an address for the next node and an address for the previous node. 
+
+- Nodes do not have indices, and a linked list is continuous, meaning the next pointer does not have to have a similar memory address to the node prior to.
+
+WHY LINKED LISTS OVER ARRAYS?
+
+- When removing or shifting elements in an array, every element must be moved. This process can be time consuming for larger data sets
+
+- ADDING NODES
+- Take an address (pointer) stored in a previous node, and make that the address of the newly inserted node. 
+- Then have the address of the previous node, be the address of the node just created. 
+- This process does not require the shifting of elements, making it more time efficient. 
+- DELETING NODES
+- When a node is deleted, the previous node simply changes its pointer to the address of the next node in chain, no shifting necessary. 
+
+
+WHY ARRAYS OVER LINKED LISTS?
+- Linked lists are bad at searching for elements, given there is no index. You must start at the begging of the chain and work towards the end. 
+- This can be combated by using a doubly linked list, then use a search algo, like a two pointer for simultaneous traversal. 
+    - HOWEVER, doubly linked lists take up a lot of memory.
