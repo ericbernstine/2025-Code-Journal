@@ -1,0 +1,27 @@
+SVGs
+
+Scalable vector graphics, often called SVGs are technically an image format but offer much more flexibility than typical image files. SVGs are often used for animation in web design as well. 
+
+Think of SVGs as programmable images, as they are an html tag with lots of available attributes. In fact SVGs can be written in XML and exported. Or written inline as a normal HTML tag. 
+
+HOW TO USE SVGs
+A. Create a single svg tag within a file, and save that file as a .svg format, then import the svg inside an image tag. 
+	- This is better if the graphic is getting used multiple times
+B. Create an SVG tag inside an HTML document just like any other tag. Some important attributes to start with a shape definition.
+	- <rect>
+	- <circle>
+	- <line>  
+There are many other shape attributes and each are defined with x and y coordinates, passed as html attributes. 
+
+The <path> attributes is also worth noting, as this helps define animation instructions for the graphic. Inside the path tag, there is a ‘d’ attribute for data where the animation details are defined. 
+<path d = ‘M 10 20 l 20 70’>
+
+See more about path details here:
+https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths
+
+
+BENEFITS OF SVGS
+- SVGs can be scaled to any size without using resolution. They do not use pixels as other formats do, and instead use geometry based on the coordinates defined by the creator. 
+    - Think of it like this, instead of defining a collection of pixels to create a circle, Instead one is created based on the counterpoint and radius of pre-defined coordinates 
+- SVGs are often smaller in size due to the fact that shapes are defined mathematically and not stores as pixel data
+- 
