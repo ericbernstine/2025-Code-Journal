@@ -1,0 +1,11 @@
+07JAN25
+
+- Completed HTML & CSS in depth section of Meta-Front End Certification Course. 
+- Completed CSS portfolio project for Faux business. 
+
+General Notes: 
+- Apply transitions directly to pseudo state elements in CSS. 
+- Use rgba color format to add opacity to a background color 
+	- background-color: rgba(132, 132, 132, 0.1);
+- You can overlay background-image and background color
+    - Make the background image an SVG and provide a color to create new dynamic backgrounds
