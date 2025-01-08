@@ -1,0 +1,12 @@
+08JAN25
+
+- Worked on Pokedex React App. Added functionality to Pokemon types. Printing different pictures based on the pokemon’s type.
+- I Imported all of the Pokemon type images (water, grass, etc.), then based on the Pokemon type Array that is passed over as a prop. I ran a map function for each type in the type array, passing each type to a function with a switch case, that will return one of the Pokemon type images. I then take that return value, and use that a source value to an image tag, passing that back to the parent component. 
+
+DAILY NOTES:
+- You cannot place a component as a src value in an image tag. 
+    - <img src={<component/>}> !!!! This does not work. 
+- You have to make the component simply return an image. 
+    - If this does not work, create and extra step between components and create a specific image component that return the img tag. 
+- HAVE TO provide an alt value when returning an img tag from a react component, REACT DONT LIKE IT WITHOUT. 
+- You can skip break statements in a switch case if you are returning a value with that case.
