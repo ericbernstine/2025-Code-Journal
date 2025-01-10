@@ -1,0 +1,21 @@
+
+React Intro2 (Props)
+
+- Props in react are basically the same as parameters for standard functions, they are bits of data that is expected to be passed back into the parent component. 
+- When using NAMED props they must be wrapped inside {} brackets during deceleration
+- You can also avoid naming props and just put props inside the () brackets during component deceleration, then access them using dot notation. 
+- IS NOT possible to send data from the child component back to the parent
+- When declaring a component using props (Method 1) you can never change the value of those props. For example, 
+    - props.title = ‘New Title’ // this is invalid
+
+BOTH ARE VALID SYNTAX
+
+1. function Component (props) {
+	return (<h1>{props.title}</h1>)
+}
+
+OR
+
+2. function Component ({title}) {
+	return (<h1>{title}</h1>)
+}
