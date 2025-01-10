@@ -1,0 +1,25 @@
+React Intro/ Components
+
+- React was designed to build SPAs but this can be omitted with react-router-dom
+- React was built around component, meant to be reusable pieces of code, similar to just regular functions but instead of outputting raw data or other code, components can output entire sections of web pages, JS, HTML and all. This dynamic syntax is called JSX, but all React files are written in .js file types
+- React does not make updates to the DOM until necessary, React operates on a copy of the real DOM referred to as a virtual DOM, which users interact with. 
+	MY NOTES:
+		- How big does a web app need to be where a virtual DOM is more advantageous then just updating the real DOM?
+
+- Components must be imported or exported. There will always be at least one component in every React project, the root element/App.js
+- Components look like JS functions with html inside, the return statement is defined with () brackets and normally has a parent div returned along with all other code. 
+
+const MyComponent = ({params here}) => {
+	return(
+		<div>
+			CODE HERE
+		</div>
+	)
+}
+
+
+- React components must be capitalized.
+- Parameters are passed inside {} brackets 
+- Components can be exported as a default, then can be exported after declaration, or during declaration 
+
+export MyComponent = () = {}
