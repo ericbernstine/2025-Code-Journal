@@ -1,0 +1,19 @@
+React Styling 
+
+- You cannot use class (protected keyword) you instead use className=‘’ 
+- Remember to import the CSS file to the JS file where corresponding classes will be applied
+
+INLINE STYLING 
+- All inline styling has the same syntax as normal inline CSS, HOWEVER they must be wrapped in {} brackets similar to passing a prop, and must be a value of the style attribute.
+            <div>
+                <h1 style={{color:"tomato", fontSize:"40px", fontWeight:"bold"}}>
+                    {props.heading}
+                </h1>
+            </div>
+- This is called a string literal object, notice how it follows the same syntax as a normal JS object, only passed into the style attribute style={{obj here}}
+- That obj being passed into the style attribute can also be defined separately and then passed to the style attribute. style={myObjectName}
+		const myStyles = {
+			color:"tomato",
+			fontSize:"40px"
+		}
+		<Heading style={myStyles} />
