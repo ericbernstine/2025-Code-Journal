@@ -1,0 +1,24 @@
+Looping over Arrays and Objects
+
+ARRAYS 
+- Loop over arrays using forEach or Map function 
+- Standard loops works as well, but these functions are easier to understand 
+- Check if item exists using indexOf() method, if value returns greater than -1, value exists. 
+
+myArray.map((item) => {
+	console.log(item)
+})
+- This will print every item inside an array, for an array of objects, you can use dot notation or brackets to manipulate data any further. 
+
+OBJECTS
+- Loop over objects with a FOR IN loop
+- You can also use Object.keys() or Object.entries() but a for in loop is better looking syntax. 
+- Check if object key exists within an object but simply using myObj[keyValue]
+- Check if value exists within an object by using for in.
+
+for (const item in myObj) {
+	return myObj[item] // this syntax will access any obj value.
+	return item // this syntax will access any key value inside the object passed as 	myObj
+}
+
+- If attempting to loop over an array of objects, use a map function and assign a value to each object iteration. Then run a for in loop to access any object keys inside that iteration. To access any values inside that iteration, you can use dot notation. 
