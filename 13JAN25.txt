@@ -1,0 +1,21 @@
+JSX and ES6 Syntax 
+
+- JSX expressions are always wrapped in {} brackets
+- In JSX, you can also pass expressions as props, or as attributes like ‘src’ for example. You cannot pass other components. 
+- You cannot omit the () from an arrow function if there is a single parameters/props are being passed to the argument. If there are no parameters you must still include empty ().
+
+const myFunction = x => {
+	function here
+}
+
+This is the same as
+
+const myFunction = (x) => {
+	function here
+}
+
+TERNARY OPERATOR 
+
+name == ‘Bob’ ? Yes, this is Bob’  : ‘No, this is not Bob’
+
+expression to evaluate ? condition if true : condition if false; 
