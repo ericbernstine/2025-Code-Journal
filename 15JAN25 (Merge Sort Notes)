@@ -1,0 +1,12 @@
+Merge Sort Algo
+
+
+- Merge sorts are used on array data types, think about a divide, sort and merge strategy, uses recursion.
+- Uses O(n log n) time complexity, and requires more space because of the amount of sub-arrays created. Uses O(n) memory. 
+- The original array is split into two arrays (sub-arrays) then called recursively to split into another set of sub-arrays, again and again.
+- Once the array is broken up into singular values, those values are then sent back through a merge function that takes two values and the sub-array they came from as arguments. 
+- As this process is repeated going back towards the original array, the first or lowest value in each sub-array is compared with the lowest value in the other sub-array. Then those values are passed back into another array one level up. 
+- This process is repeated until the original array is returned in order 
+
+FULL EXPLANATION: 
+- An array of 8 is split to 4, then 2, then 1. Evaluate both singular values the lower values is placed in the first (left) position, then both values form a new sub-array and get passes back up. Once there are two subarrays with 2 values each, the left most values in both are compared, and the lower value gets moved to the first (left) position of the new sub-array that will have a total of 4. This process is repeated until the original array is sorted. 
