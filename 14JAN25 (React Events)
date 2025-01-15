@@ -1,0 +1,18 @@
+React Event Listeners
+
+Event - when a user interacts
+Event handler - the function that listens for user interaction 
+Action - complete function call
+
+- React listeners are written/function the same way as traditional HTML events, only React uses camelcase and no parentheses
+- React listeners mostly use expressions 
+- Expressions over declarations. Standard function definition syntax is not commonly used and is also worse for memory. Using variable names or arrows for functions make them expressions, In which the function body only gets hoisted to memory after it is called. The name of the function is hoisted though. 
+
+onClick = {functionNameHere}
+
+- React technically omits the function call which is why you don’t use any () instead you pass reference to the function and let the event handler do the rest
+- You can still pass regular JS/ES6 inside a React event handler
+
+onClick = { () => console.log(‘button clicked’) }
+onClick = { () => {value+=1}; }
+This would not trigger a re-render or update, you would need to adjust a state variable for that, but this is valid syntax.
