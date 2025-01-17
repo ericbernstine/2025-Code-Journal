@@ -1,0 +1,17 @@
+React Events 2
+
+
+- You can update regular JS values through standard practices and event handlers but the page will not update unless you declare a state variable.
+- All event listeners in react have a vanilla JS handler equivalent expect for these, which behave differently from there closest equivalent. 
+- Remember event handler functions must either be inside the same component or imported into the current JS file. 
+
+onPointerEnter={}
+onPointerLeave={}
+
+- expressions as props and children
+
+Props
+https://legacy.reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-props
+
+Children
+https://legacy.reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children
