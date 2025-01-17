@@ -1,0 +1,24 @@
+ColdFusion 
+
+- ColdFusion is a markup language similar to html, also uses <> brackets. Originally developed by Adobe 
+- ColdFusion seems to be declining in popularity, other server-side languages for websites like Node.js, PHP, python are favored. 
+- Used for government systems and legacy applications
+- Offers database integration, session management and dynamic updates to web applications. 
+- Think of ColdFusion as a PHP alternative, but more distant from HTML
+- Almost like an old school framework, but this is an actual language. 
+- All of the syntax is the same as other common programming syntax, but uses CF at the start of each tag. 
+- Cold fusion components use .cfm files or .cfc (Cold Fusion Markup/ Cold Fusion Component)
+
+<cfif myName EQ "John"> 
+	<cfoutput>Hello, John!</cfoutput> 
+<cfelse> 
+	<cfoutput>Hello, Guest!</cfoutput> 
+</cfif>
+
+<cfloop from="1" to="5" index="i"> 
+	<cfoutput>#i# </cfoutput> 
+</cfloop>
+
+- You can also use a script style syntax that has a standard programming language kind of feel
+
+<cfscript> name = "John"; if (name == "John") { writeOutput("Hello, John!"); } </cfscript>
