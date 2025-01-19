@@ -1,0 +1,15 @@
+Worked on Pokedex App
+
+Notes: 
+
+- Make sure when passing props, not using the props keyword, like the example below, you must wrap the prop inside {} brackets. 
+const NewComponent = ({uniquePropNameHere}) => {}
+
+You can have one component export another component as a return value. 
+There are two ways to check if an item exists in an array, use forEach() or map(), then use one of the options below
+
+Check if item does NOT EXIST
+if (myArr.indexOf(item) === -1) || if (!myArr.includes(item))
+
+Check if item EXISTS 
+if (myArr.indexOf(item) >= 0) || if (myArr.includes(item))
