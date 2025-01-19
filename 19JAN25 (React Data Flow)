@@ -1,0 +1,6 @@
+React Data Flow
+
+- React uses a parent-child uni-directional flow of data (one-way). Meaning that data will always flow from parent to child component 
+- The reason for this data flow is because of its simplicity and accessibility in understanding the direction of data. 
+- You can pass data into multiple other child components, and move further down the tree, but data cannot be passed the opposite direction. 
+- Data is passed via props, which are objects. 
