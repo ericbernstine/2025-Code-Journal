@@ -1,0 +1,22 @@
+Internship 
+
+- Completed code reviews / QA testing 
+
+WEB APP REVIEW  
+- Test web app on all 3 major browser (Safari, Chrome, Firefox) 
+- Use developer tools on all browsers, view app from multiple viewports be sure to include All iPads (covers most tablets) and all iPhones (genSE and up will cover most phones)
+    - You can use tools like Blisk in conjunction with browser developer tools to view the app across other devices. 
+    - You can test web apps on safari from a windows OS by using software like Playwright
+    - NOTE: non will be as accurate as testing on an actual device. 
+- Try and break it, click every button, search for bugs or unexpected behavior
+- Test from a user perspective not a developers
+
+SOFTWARE TESTING 
+- Test files will often end in .test or .spec, a file name might look like this. 
+
+app.spec.js
+e2e.test.js
+
+- Most test files have a describe feature describing what the component is supposed to do, this is called a test suite and contains multiple tests
+- Those individual tests are likely to start with ‘it’
+- Most of these test programs will use jest 
