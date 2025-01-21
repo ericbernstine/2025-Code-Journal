@@ -1,0 +1,33 @@
+React Hooks
+
+useState()
+- React uses hooks to update DOM API calls
+- The most common hook is useState which has an initial set value and update value function that are defined when a state variable is declared. 
+- Be sure to import useState before using, comes from react library
+- useState is defined with array destructuring. 
+
+const [myStateVar, setMyStateVat] = useState(valueHere)
+
+export default function InputComponent() { 
+  const [inputText, setText] = useState('hello'); 
+
+  function handleChange(e) { 
+    setText(e.target.value); 
+  } 
+
+  return ( 
+    <> 
+      <input value={inputText} onChange={handleChange} /> 
+      <p>You typed: {inputText}</p> 
+      <button onClick={() => setText('hello')}>Reset</button> 
+    </> 
+  ); 
+} 
+
+
+useRef()
+- useRef holds a reference to a DOM element/ store a mutable value that doesn't trigger re-renders when updated. 
+- Basically, this lets you store a state value, or something that needs updating, but does not require a DOM update. 
+- This is the same thing as storing a value in regular JS and updating it accordingly, only this variable will persist between renders. 
+
+const myRefVar = useRef(valueHere)
