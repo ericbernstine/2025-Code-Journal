@@ -1,0 +1,15 @@
+ER Modeling
+
+- ER Diagrams are like blueprints for databases, showing how different entities (like tables) relate to each other and the rules for those relationships.
+- Every entity (like Investment Company, Mutual Fund, or Security) has attributes, which are just details we track for that entity, like IDs, names, or dates.
+- Relationships connect entities and explain how they interact. For example, "Investment Company manages Mutual Fund" tells us how those two are linked.
+- Cardinality is about numbers. It shows how many records in one entity relate to records in another. For example:
+    - An investment company can manage many mutual funds, but each mutual fund is managed by one company.
+- Crow's feet in diagrams indicate "many." So, if one side of a relationship can have multiple records, that’s where the crow’s foot goes.
+- Mandatory and optional participation means whether an entity has to be part of the relationship:
+    - Mandatory: It must be linked, like every mutual fund needing a company.
+    - Optional: It can be linked, like securities that may or may not be in mutual funds.
+- Sometimes we need a junction table (like the MutualFund-Security table) to handle many-to-many relationships, where multiple records in one table connect to multiple records in another.
+- Arrows and labels in the diagram are super important—they show the rules of the relationship, like "one-to-many" or "one-to-one."
+- Even though example tables with data might not always be required, they’re helpful to visualize how everything works and to double-check if your relationships make sense.
+- Above all, ER modeling helps ensure that the database is logical, efficient, and ready to store data in a way that supports the relationships you need to track
