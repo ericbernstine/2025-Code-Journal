@@ -1,0 +1,16 @@
+State in React
+
+State is just data within a component that affects webpage behavior 
+
+
+When passing data between sibling components that both use state, you need to ‘lift the state up’ or essentially create a new component that acts as a bridge between the other two components and exists on the same level as the parent component. 
+- You can also use the React context API
+
+Avoid Prop Drilling, prop drilling is when a component is passing data to child, then grandchild and so on and so on. This will cause issues as every time a state value is updated, so are its related values. 
+
+Context API
+- A streamlined method that passes data between state. 
+- Best when multiple components need to access the same global state. 
+- Not best use for real time user inputs 
+import { createContext } from "react"; 
+const MyContext = createContext();
