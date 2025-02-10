@@ -1,0 +1,14 @@
+UseState Tips
+
+- When importing use state through the React keyword like this. 
+import React from "react";
+
+- You have to declare the state variable with the react keyword as well. 
+
+Const [myVarName] = React.useState()
+
+- When importing use state directly you can do this. 
+
+Const [myVarName] = useState()
+
+MUST USE ONE METHOD OR THE OTHER, IS NOT FORGIVING. 
