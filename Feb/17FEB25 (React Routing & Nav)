@@ -1,0 +1,18 @@
+React Routing & Loading 
+
+- React uses SPAs to provide the illusion of navigating through multiple websites. 
+- SPAs do not use traditional anchor tags, no page refresh ever occurs, they simply update the DOM in place to reflect new page content.  
+- To implement the functionality of MPAs,  the React-Router-DOM, install through node.  
+	import {BroswerRouter} from react-router-dom ON PARENT or ROOT (index.js)
+	import {Routes, Route, Link} from react-router-dom ON FIRST CHILD, application level (app.js) 
+		<Routes>
+			<Route path=‘/‘ />
+			<Route path="/desired-route-name" element = { < ReactComponentName /> } />
+		</Routes>
+
+		<nav>
+			<Link to=“/“>First Page</Link>
+			<Link to=“/desired-route-name“>Second Page</Link>
+		</nav> 
+- Webpages can be loaded in two ways, #1: Bundling, used by older websites or static pages, and #2: Lazy loading, or code splitting, when resources are retrieved as needed. 
+
