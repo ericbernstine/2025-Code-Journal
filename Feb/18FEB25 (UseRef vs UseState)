@@ -1,0 +1,14 @@
+UseRef vs UseState
+
+- useState is the better option for quick updates to the DOM, or manipulation in place, pass this event to this listener function
+- useRef is better when you want to use traditional DOM manipulation inside react. 
+    - This is not the recommended method because it bypassed the virtual DOM and manipulates directly
+    - This is also slower with more content?
+
+- Go with useRef when stuck and use more traditional JS DOM API
+
+- In react with useRef remember to use ‘current.syle’ when accessing an element. 
+
+varName.current.style.height = 100px 
+
+name | .current | .style | .cssProperty = value
