@@ -1,0 +1,13 @@
+React Video 
+
+To play video inside a react app, first install the ‘react-player’ via npm.
+Then import it
+
+Import ReactPlayer from ‘react-player;
+
+Then treat it like a regular component tag, has different attribute tags than the HTML video tag, but each attribute has similar behavior. 
+
+<ReactPlayer
+	url={VideoURLStringVariableHere}
+	playing={true}
+/>
