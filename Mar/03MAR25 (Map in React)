@@ -1,0 +1,21 @@
+Using map in React
+
+- When manipulating 3rd party data, use map()
+    - In React, remember that you can imbed HTML elements within the map method. 
+
+Notes about map()
+- Map will always return a new array with the same length as the original. 
+- If you need items to be removed, make sure to use filter() and not map
+
+You do not need to set an entire new value to add filter onto a map method, since map is returning a value anyways you can place a filter directly on top of it. Like this
+
+Dataset .map((item) => { 
+	return item.numbers; 
+}) .filter((item) => 
+	if(item < 200){
+		return true;
+});
+
+// KEEP IN MIND
+The filter method already returns a true or false value meaning you just place the conditional statement right inside the declaration 
+.filter((item) => item < 200);
