@@ -1,0 +1,9 @@
+React Forms
+- Controlled components are handled through state
+- Uncontrolled components handle data through DOM
+
+React keys
+- Different from key value pairs in object, keys are used to help identify any variables that my be updated by a user, giving an element a key helps react determine which values need to be updated on a re-render. 
+- Keys are most often the same ID of primary key is inside a database, indexes should be used as a last resort for keys. 
+
+<li key=‘a’>A</li>
