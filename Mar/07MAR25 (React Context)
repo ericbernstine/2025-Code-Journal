@@ -9,6 +9,7 @@ Export const myVar = createContext(); // you use export here to import data to t
 <myVar.provider value={dataYouWantToPassHere}>
 	<OtherComponent> // This can be the App component if you want the data to be global. 
 </myVar.provider>
+- Any component that is a child of the provider component can receive the data inside the defined context. 
 
 Import Context: 
 Import {myVar} from ‘.componentFileName.js’;
