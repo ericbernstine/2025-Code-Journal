@@ -1,0 +1,20 @@
+React Context 
+
+- Context is an alternative to props and another way to pass data within React. 
+- This is meant for global data or information that is needed across a number of components
+
+Define Context: 
+import { createContext } from ‘react’;
+Export const myVar = createContext(); // you use export here to import data to the component where you need it
+<myVar.provider value={dataYouWantToPassHere}>
+	<OtherComponent> // This can be the App component if you want the data to be global. 
+</myVar.provider>
+
+Import Context: 
+Import {myVar} from ‘.componentFileName.js’;
+Function result(){
+	const myVarContext = useContext(myVar);
+	return (
+		<h1>{myVarContext}</h1>
+	)
+}
