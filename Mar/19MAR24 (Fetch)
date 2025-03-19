@@ -1,0 +1,14 @@
+Fetch API 
+
+Javascript by default is single threaded. Fetch, more often than not, because it is awaiting results form an external API and can be skipped over until the results are received. 
+
+It is recommended to place all fetch calls in React inside a useEffect hook to avoid side effects. 
+
+export default function App() { 
+  const [btcData, setBtcData] = useState({}); 
+  useEffect(() => { 
+    fetch(`https://api.coindesk.com/v1/bpi/currentprice.json`) 
+      .then((response) => response.json()) 
+      .then((jsonData) => setBtcData(jsonData.bpi.USD)) 
+      .catch((error) => console.log(error)); 
+  }, []); 
