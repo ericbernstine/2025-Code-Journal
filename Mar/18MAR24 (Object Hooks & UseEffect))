@@ -1,0 +1,28 @@
+Hooks w/ Objects & UseEffect 
+
+When using the useState hook to update an object data type  do not update any values directly inside the set function like this…
+	setObject({ name: “Updated Name” });
+	
+Instead create a copy of the object and pass that updated copy as the argument in the set function. 
+	const newObject = {...stateObjectVariable};
+	newObject.name = “Updated Name”;
+	setObject(newObject);
+
+This same method is applied if you only need to update a specific property of an object, but you need to pass the new updated variable name in the arrow function. 
+	function updateVar() {
+		setObject(newObject => {
+			return {…newObject, lastName: “Updated Last Name”};
+		}
+	}
+
+
+UseEffect 
+
+useEffect is a hook intended to perform side effects inside React Components. 
+This is used for something like updating a web app title dynamically 
+
+React.useEffect() 
+
+If you want a useEffect hook to only run once, place an array at the end of the call. You can place a variable inside the array to make the hook dependent on another variables state
+
+React.useEffect( () => { function here} , [] ) 
