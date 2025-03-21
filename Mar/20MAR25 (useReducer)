@@ -1,0 +1,17 @@
+React useReducer
+
+The useReducer function is a more advanced version of useState dealing with more complex versions of state. For example, where state is dependent on the previous state. 
+
+The useReducer function expects two arguments, the reducer function (this works almost like a switch statement) and the initial state. 
+
+useState vs useReducer 
+useState: Best for primitive data types. (Strings, ints, booleans) 
+useReducer: Best for complex data types (arrays, and objects)
+
+
+function reducer(state, action) {
+}
+
+function MyComponent() {
+  const [state, dispatch] = useReducer(reducer, { age: 42 });
+ }
