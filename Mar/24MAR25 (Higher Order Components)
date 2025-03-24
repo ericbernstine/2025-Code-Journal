@@ -1,0 +1,15 @@
+React Higher Order Components 
+
+A higher order component takes a react component and returns a new component. 
+
+When naming HOCs, similar to get or set functions, you must name the HOC with the final function in mind, but instead of get or set you use the word with. For example, ‘myFunction’ becomes ‘withMyFunction’
+
+After writing the HOC, you need to use a return render statement, 
+
+	return render({ stateComponent })
+	
+Then when you want to use the HOC you can render it conditionally without passing props then running a conditional statement
+	
+	render = { ({stateComponent}) => (
+		<div></div>
+	)}
